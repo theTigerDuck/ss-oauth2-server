@@ -1,5 +1,5 @@
 {
-    "name": "iansimpson/ss-oauth2-server",
+    "name": "thetigerduck/ss-oauth2-server",
     "description": "Silverstripe OAuth 2.0 Server",
     "license": "MIT",
     "type": "silverstripe-vendormodule",
@@ -14,6 +14,10 @@
         {
             "name": "Ian Simpson",
             "email": "ian@iansimpson.nz"
+        },
+        {
+            "name": "Janosch Kilian",
+            "email": "janosch@spleen.de"
         }
     ],
     "homepage": "https://logicstudio.nz",
