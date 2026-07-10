@@ -17,6 +17,7 @@ use SilverStripe\ORM\DataObject;
 use SilverStripe\ORM\ValidationResult;
 use SilverStripe\Security\RandomGenerator;
 use SilverStripe\SiteConfig\SiteConfig;
+use SilverStripe\Core\Validation\ValidationResult;
 
 /**
  * @property ?string $ClientName
@@ -179,7 +180,7 @@ class ClientEntity extends DataObject implements ClientEntityInterface
      *
      * @return ValidationResult
      */
-    public function validate()
+    public function validate() : ValidationResult
     {
         $result = ValidationResult::create();
 
