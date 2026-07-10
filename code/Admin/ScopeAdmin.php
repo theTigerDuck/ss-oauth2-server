@@ -12,7 +12,7 @@ use SilverStripe\Forms\GridField\GridFieldDeleteAction;
 use SilverStripe\Forms\GridField\GridFieldDetailForm;
 use SilverStripe\Forms\GridField\GridFieldEditButton;
 use SilverStripe\Forms\GridField\GridFieldToolbarHeader;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\ORM\HasManyList;
 use SilverStripe\SiteConfig\SiteConfig;
 
@@ -20,7 +20,7 @@ use SilverStripe\SiteConfig\SiteConfig;
  * @method HasManyList|ScopeEntity[] Scopes()
  * @method SiteConfig&static getOwner()
  */
-class ScopeAdmin extends DataExtension
+class ScopeAdmin extends Extension
 {
     /**
      * @var array|string[]
