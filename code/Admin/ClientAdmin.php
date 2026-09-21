@@ -12,7 +12,7 @@ use SilverStripe\Forms\GridField\GridFieldDeleteAction;
 use SilverStripe\Forms\GridField\GridFieldDetailForm;
 use SilverStripe\Forms\GridField\GridFieldEditButton;
 use SilverStripe\Forms\GridField\GridFieldToolbarHeader;
-use SilverStripe\Core\Extension;
+use SilverStripe\ORM\DataExtension;
 use SilverStripe\ORM\HasManyList;
 use SilverStripe\SiteConfig\SiteConfig;
 
@@ -20,7 +20,7 @@ use SilverStripe\SiteConfig\SiteConfig;
  * @method ClientEntity[]|HasManyList Clients()
  * @method SiteConfig&static getOwner()
  */
-class ClientAdmin extends Extension
+class ClientAdmin extends DataExtension
 {
     /**
      * @var array|string[]
